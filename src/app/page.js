@@ -6,7 +6,7 @@ import { io } from "socket.io-client";
 import axios from 'axios';
 
 const socket = io("ws://localhost:9002", {
-  reconnectionDelayMax: 100000
+  reconnectionDelayMax: 10000
 });
 
 export default function Home() {
